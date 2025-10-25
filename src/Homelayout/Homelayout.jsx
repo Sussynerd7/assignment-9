@@ -20,7 +20,7 @@ const Homelayout = () => {
 
     return (
         <>
-            <div className=' 2xl:px-0 min-h-screen flex-col flex justify-center mx-auto'>
+            <div className='bg-gradient-to-br from-blue-100/70 to-white 2xl:px-0 min-h-screen flex-col flex justify-center mx-auto'>
                 <header className='px-1 bg-white border-b border-info  sticky top-0 z-10  shadow-md'>
                     <Navbar></Navbar>
                 </header>

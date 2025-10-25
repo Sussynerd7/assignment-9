@@ -9,10 +9,10 @@ import {
 } from 'recharts';
 
 const dataStuff = [
-    { name: 'Jan', value: 4500 },
+    { name: 'Jan', value: 3500 },
     { name: 'Feb', value: 5100 },
     { name: 'Mar', value: 3900 },
-    { name: 'Apr', value: 6200 },
+    { name: 'Apr', value: 5200 },
     { name: 'May', value: 5500 },
     { name: 'Jun', value: 7000 },
 ];

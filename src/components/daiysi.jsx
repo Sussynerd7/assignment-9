@@ -14,55 +14,55 @@ const img9 =slice[8].pictureURL;
 const img10 =slice[9].pictureURL;
     return (
         <div className='   rounded-3xl'>
-            <div className="carousel md:w-[662px]  2xl:w-[1200px] rounded-box ">
+            <div className="carousel md:w-[662px] gap-3  2xl:w-[1200px] rounded-box ">
   <div className="carousel-item">
     <img
-      src={img1} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img1} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img2} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img2} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img3} className='2xl:w-90 w-50 h-50 2xl:h-90 '
+      src={img3} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90 '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img4} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img4} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img5} className='2xl:w-90 w-50 h-50 2xl:h-90 '
+      src={img5} className= 'rounded   2xl:w-90 w-50 h-50 2xl:h-90 '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img6} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img6} className='rounded  2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img7} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img7} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img8} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img8} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img9} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img9} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   <div className="carousel-item">
     <img
-      src={img10} className='2xl:w-90 w-50 h-50 2xl:h-90  '
+      src={img10} className='rounded    2xl:w-90 w-50 h-50 2xl:h-90  '
       alt="Burger" />
   </div>
   
