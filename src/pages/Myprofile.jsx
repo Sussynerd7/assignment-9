@@ -35,10 +35,10 @@ const Myprofile = () => {
     }
     
     return (
-        <div className='py-10 bg-gray-50 min-h-screen'>
+        <div className='py-10 bg-gray-50 rounded-2xl'>
             <title>Profile</title>
 
-            <div className='max-w-4xl mx-auto'>
+            <div className='max-w-4xl mx-auto '>
                 <div className='2xl:flex flex m-2 p-3 border border-blue-400/50 bg-blue-50 shadow-2xl rounded-2xl'>
                     <div className='flex items-center p-3 bg-white rounded-2xl shadow-xl'>
 
@@ -65,7 +65,7 @@ const Myprofile = () => {
                                 <label className="label block text-sm font-medium text-gray-700">Name</label>
                                 <input name='name' type="text" className="input w-full mt-1 p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500" placeholder={displayName || "Enter new name"} />
                                 <label className="label block mt-4 text-sm font-medium text-gray-700">Photo URL</label>
-                                <input name='photo' type="text" className="input w-full mt-1 p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500" placeholder={photoURL || "Enter new photo URL"} />
+                                <input name='photo' type="text" className="input w-full mt-1 p-2 border border-gray-300 rounded-lg focus:border-blue-500 focus:ring-blue-500" placeholder= "An url valid"  />
                                 
                                 <button className="btn btn-neutral mt-6 w-full py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">Update Profile</button>
                             </fieldset>
