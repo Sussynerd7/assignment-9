@@ -33,7 +33,7 @@ const tooltipText = user
                         isActive 
                             ? "text-sky-500 font-bold border-b-2 border-sky-500"
                             : "text-gray-600 hover:text-sky-500" 
-                    } to={"/extra"}>Parent tips </NavLink>
+                    } to={user? "/extra":"/auth/login"}>Parent tips </NavLink>
             
            </div>
              <div className="flex gap-2 bg-gray-200 p-1 rounded-md items-center">
