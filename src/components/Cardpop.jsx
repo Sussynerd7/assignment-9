@@ -6,7 +6,7 @@ import { AuthContext } from '../provider/Authprovider';
 
 const Cardpop = ({ info }) => {
     
-   
+   console.log(info)
     const { 
         toyId,
         toyName, 
@@ -16,6 +16,7 @@ const Cardpop = ({ info }) => {
         pictureURL,
     } = info;
 const { user } = use(AuthContext)
+
     const ned = user?`/info/${toyId}`:"/auth/login"
     return (
         

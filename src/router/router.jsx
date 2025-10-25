@@ -41,6 +41,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"/extra",
+                
                 element:<Extra></Extra>
             }
         ]
