@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import { FaStar, FaBox, FaDollarSign } from 'react-icons/fa';
 import { Link } from 'react-router';
 import { AuthContext } from '../provider/Authprovider';
-import { auth } from '../firebase/firebaseinit';
+
 
 const Cardpop = ({ info }) => {
     
@@ -37,7 +37,7 @@ const { user } = use(AuthContext)
 <h1 className='text-left mr-18 2xl:mr-52'>In stock : {availableQuantity}</h1>
                </div>
      <Link className="btn btn-info  font-semibold  w-full" to={ned}>          
- More</Link>
+ View More</Link>
         </div>
         </>
     );
