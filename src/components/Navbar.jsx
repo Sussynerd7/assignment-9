@@ -5,7 +5,7 @@ import { AuthContext } from '../provider/Authprovider';
 const Navbar = () => {
     const {user,signout,iconload} = use(AuthContext);
     const {displayName,photoURL} = {...user}
-  console.log(photoURL)
+ 
     
 const tooltipText = user 
         ? displayName || "User (Name not set)" 

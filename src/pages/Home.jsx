@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleSlider from '../components/Sliderfirst';
+
 import Daiysi from '../components/daiysi';
 import { useLoaderData } from 'react-router';
 import Popular from '../components/Popular';
@@ -13,7 +13,7 @@ const Home = () => {
      
 
     return (
-        <div
+        <div className='mt-5'
         >
             
             <title>TOY Topia Home</title>

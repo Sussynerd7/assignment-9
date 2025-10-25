@@ -27,8 +27,8 @@ const Myprofile = () => {
             toast.info("Profile updated successfully!"); 
           })
           .catch((error) => {
-            console.error(error);
-            toast.error("Update failed. See console for details."); 
+           
+            toast.error(error); 
             setUser(user);
           });
         

@@ -3,7 +3,7 @@
 import React, { use, useState } from 'react';
 import { AuthContext } from '../provider/Authprovider';
 import { Link } from 'react-router';
-import { auth } from '../firebase/firebaseinit';
+
 import { toast, ToastContainer } from 'react-toastify';
 
 const Register = () => {
@@ -23,7 +23,7 @@ const email = e.target.email.value;
 const password = e.target.password.value;
 const photo = e.target.photo.value;
 const name = e.target.name.value;
-console.log(email,password)
+
 const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
 if (!passwordRegex.test(password)) {
             toast('Password must be at least 6 characters long and include at least one uppercase and one lowercase letter.');
@@ -33,31 +33,15 @@ if (!passwordRegex.test(password)) {
      .then((result)=>{
        const userinfo = result.user;
        setUser(userinfo)
-       console.log(userinfo)
+       
        updateUser({ displayName: name, photoURL: photo })
           .then(() => {
 
             setUser({ ...user, displayName: name, photoURL: photo });
           })
-          .catch((error) => {
-            console.log(error);
-            setUser(user);
-          });
+        
      })
-// if(!user){
-//  
-// }
-// else{
-//      updateUser({ displayName: name, photoURL: photo })
-//           .then(() => {
 
-//             setUser({ ...user, displayName: name, photoURL: photo });
-//           })
-//           .catch((error) => {
-//             console.log(error);
-//             setUser(user);
-//           });
-//     }
 
     
 

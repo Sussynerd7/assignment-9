@@ -15,9 +15,7 @@ const handleresetpas=(e) =>{
     
 
 resetpass(email)
-  .then((result) => {
-    console.log(result);
-  })
+  
   .catch((error) => {
     toast.error(error.message);
   });

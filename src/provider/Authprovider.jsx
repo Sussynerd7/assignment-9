@@ -4,10 +4,10 @@ import { auth } from '../firebase/firebaseinit';
 import { toast } from 'react-toastify';
 
 export const AuthContext = createContext(null);
-const gooo = new GoogleAuthProvider();
+const gooo = new GoogleAuthProvider();  
 const Authprovider = ({ children }) => {
     const [user, setUser] = useState({});
-    console.log(user)
+ 
     const [iconload, seticonload] = useState(true);
 
     const createUser = (email, password) => {
