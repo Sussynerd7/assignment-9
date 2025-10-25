@@ -21,8 +21,9 @@ const router = createBrowserRouter([
                 index:true,
                 loader: () => fetch("/info.json"),
                 hydrateFallbackElement:<span className="loading loading-bars w-[390px]"></span>,
-                errorElement:<Error></Error>,
-                element:<Home></Home>
+                
+                element:<Home></Home>,
+                errorElement:<Error></Error>
             },
             {
                 path:"/info/:id",

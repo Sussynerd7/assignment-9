@@ -29,25 +29,35 @@ if (!passwordRegex.test(password)) {
             toast('Password must be at least 6 characters long and include at least one uppercase and one lowercase letter.');
             return;
         }
-if(!user){
- createUser(email,password)
+        createUser(email,password)
      .then((result)=>{
        const userinfo = result.user;
        setUser(userinfo)
        console.log(userinfo)
-     })
-}
-// else{
-    //  updateUser({ displayName: name, photoURL: photo })
-    //       .then(() => {
+       updateUser({ displayName: name, photoURL: photo })
+          .then(() => {
 
-    //         setUser({ ...user, displayName: name, photoURL: photo });
-    //       })
-    //       .catch((error) => {
-    //         console.log(error);
-    //         setUser(user);
-    //       });
-    // }
+            setUser({ ...user, displayName: name, photoURL: photo });
+          })
+          .catch((error) => {
+            console.log(error);
+            setUser(user);
+          });
+     })
+// if(!user){
+//  
+// }
+// else{
+//      updateUser({ displayName: name, photoURL: photo })
+//           .then(() => {
+
+//             setUser({ ...user, displayName: name, photoURL: photo });
+//           })
+//           .catch((error) => {
+//             console.log(error);
+//             setUser(user);
+//           });
+//     }
 
     
 

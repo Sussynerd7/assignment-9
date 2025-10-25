@@ -57,7 +57,9 @@ const Myprofile = () => {
 
                 <div className="card bg-white w-[360px] mx-auto shadow-2xl mt-8">
                     <div className="card-body p-6">
-                        <h2 className="text-2xl font-bold mb-4 text-blue-600 border-b pb-2">Update Credentials</h2>
+                        <h2 className="text-2xl font-bold  text-blue-600 ">Update Credentials <br /></h2>
+                        <h2 className=" font-bold mb-4 text-blue-600 border-b pb-2">You need to declare both Credentials <br /></h2>
+                        
                         <form action="" onSubmit={handlereset}>
                             <fieldset className="fieldset">
                                 <label className="label block text-sm font-medium text-gray-700">Name</label>

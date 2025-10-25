@@ -5,7 +5,7 @@ import { AuthContext } from '../provider/Authprovider';
 const Navbar = () => {
     const {user,signout,iconload} = use(AuthContext);
     const {displayName,photoURL} = {...user}
-  
+  console.log(photoURL)
     
 const tooltipText = user 
         ? displayName || "User (Name not set)" 
@@ -37,7 +37,7 @@ const tooltipText = user
             
            </div>
              <div className="flex gap-2 bg-gray-200 p-1 rounded-md items-center">
-                {iconload? <span className="loading loading-spinner loading-lg"></span> :<img title={tooltipText} className='rounded-full w-[35px]' src={user? `${user.photoURL}` : notloggeduser} alt="" /> }
+                {iconload? <span className="loading loading-spinner loading-lg"></span> :<img referrerPolicy='no-referrer' title={tooltipText} className='rounded-full w-[35px]'  src={user? `${photoURL}` : notloggeduser} alt="" /> }
            <Link 
     to={user ? "/" : "/auth/login"} 
     onClick={() => {user ? signout() : null}} 

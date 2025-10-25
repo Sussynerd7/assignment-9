@@ -9,12 +9,14 @@ import SalesDetail from '../components/Saledetail';
 const Home = () => {
     const info=useLoaderData();
    
-  const slice=  info.slice(0, 10)
+  const slice=  info.slice(0, 10)   
      
 
     return (
-        <div>
-            <title>Home</title>
+        <div
+        >
+            
+            <title>TOY Topia Home</title>
             <div className='mx-auto text-center mb-2'>
                 <h1 className='text-4xl font-bold'>Our Popular toys </h1>
                 <h1 className='text-gray-500 mt-3'>View our trending toys using arroy keys/swipe </h1>
